@@ -31,7 +31,7 @@ def analyzeLog(log):
                 elif dataSub == "F8":
                     print("right")
                     # ser2.write(str(2).encode())
-                elif len(dataSub) == 0:
+                elif len(dataSub) == 0 and (dataMain in al) == False:
                     print("left")
                     # ser2.write(str(3).encode())
         except:
